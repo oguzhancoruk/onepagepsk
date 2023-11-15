@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './assets/css/tailwind.css'
+import './assets/css/materialdesignicons.min.css'
+import Index from './main/index';
+import Switcher from './components/Switcher';
+import IndexTwo from './main/index-two';
+import IndexThree from './main/index-three';
+import IndexDark from './main/index-dark';
+import IndexRtl from './main/index-rtl';
+
 
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter >
+    <Routes>
+      {/* <Route path="/" element={<Index />} /> */}
+      <Route path="/" element={<IndexTwo/>} />
+     {/*  <Route path="/index-three" element={<IndexThree/>} />
+      <Route path="/index-dark" element={<IndexDark/>} />
+      <Route path="/index-rtl" element={<IndexRtl/>} /> */}
+    </Routes>
+    {/* <Switcher/> */}
+  </BrowserRouter>
   );
 }
 
