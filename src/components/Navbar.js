@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Link as Link1 } from 'react-scroll';
 import * as Unicons from "@iconscout/react-unicons";
+import { MdDehaze } from "react-icons/md";
+
 
 export default function Navbar(){
     window.addEventListener("scroll", windowScroll);
@@ -31,6 +33,26 @@ export default function Navbar(){
             }
         }
     }
+
+    const [hide,setHide]=useState("hidden");
+    function hiddenFunc(){
+
+        if(hide==="hidden"){
+            setHide("")
+            const show=document.getElementById("menu-collapse")
+            show.classList.remove("hidden");
+        
+        }
+        else{
+            setHide("hidden")
+            const show=document.getElementById("menu-collapse")
+            
+            show.classList.add("hidden")
+        }
+    }
+
+
+    console.log(hide)
     return(
         <nav className="navbar" id="navbar">
         <div className="container flex flex-wrap items-center justify-between">
@@ -60,9 +82,10 @@ export default function Navbar(){
                     </li>
                 </ul>
                 {/* <!-- Navbar Collapse Manu Button --> */}
-                <button data-collapse="menu-collapse" type="button" className="collapse-btn inline-flex items-center ms-2 text-dark dark:text-white lg_992:hidden" aria-controls="menu-collapse" aria-expanded="false">
+                <button onClick={hiddenFunc} data-collapse="menu-collapse" type="button" className="collapse-btn inline-flex items-center ms-2 text-dark " aria-controls="menu-collapse" aria-expanded="false">
                     <span className="sr-only">Navigation Menu</span>
-                    <i className="mdi mdi-menu text-[24px]"></i>
+                    <MdDehaze style={{width:"25px",height:"25px"}}/>
+
                 </button>
             </div>
 
