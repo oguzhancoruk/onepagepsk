@@ -21,7 +21,7 @@ function App() {
       <Route path="/index-dark" element={<IndexDark/>} />
       <Route path="/index-rtl" element={<IndexRtl/>} /> */}
     </Routes>
-    {/* <Switcher/> */}
+  <Switcher/> 
   </BrowserRouter>
   );
 }
