@@ -84,7 +84,7 @@ export default function Navbar(){
                 {/* <!-- Navbar Collapse Manu Button --> */}
                 <button onClick={hiddenFunc} data-collapse="menu-collapse" type="button" className="collapse-btn inline-flex items-center ms-2 text-dark " aria-controls="menu-collapse" aria-expanded="false">
                     <span className="sr-only">Navigation Menu</span>
-                    <MdDehaze style={{width:"25px",height:"25px"}}/>
+                    {window.innerWidth<1024?<MdDehaze style={{width:"25px",height:"25px"}}/>:null}
 
                 </button>
             </div>
@@ -92,9 +92,9 @@ export default function Navbar(){
             {/* <!-- Navbar Manu --> */}
             <div className="navigation lg_992:order-1 lg_992:flex hidden ms-auto" id="menu-collapse">
                 <ul className="navbar-nav" id="navbar-navlist">
-                    <li className="nav-item">
+                   {/*  <li className="nav-item">
                         <Link1 to="home" activeClass="active" spy={true} smooth={true} duration={500} className="nav-link">Ana sayfa</Link1>
-                    </li>
+                    </li> */}
                     <li className="nav-item">
                         <Link1 to="about" activeClass="active" spy={true} smooth={true} duration={500} className="nav-link">Hakkımda</Link1>
                     </li>
