@@ -50,7 +50,7 @@ Kariyeri boyunca İstanbul Üniversitesi Çapa Tıp Fakültesi, İstanbul Büyü
 
             <div className="container md:mt-24 mt-16">
                 <div className="grid grid-cols-1 pb-8 text-center">
-                    <h3 className="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">Referenslar</h3>
+                    <h3 className="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">Referanslar</h3>
 
                     <p className="text-slate-400 max-w-xl mx-auto text-[15px]">Salih Fatih Demir, klinik deneyimi, başarıyla tamamladığı eğitimleri ve çeşitli sağlık kuruluşlarında edindiği uzmanlığıyla öne çıkan bir psikolog olarak övgü ve güvenilir referanslara sahiptir.</p>
                 </div>

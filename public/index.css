@@ -1,0 +1,28 @@
+.fixed-bottom-menu{
+    display: block;
+position: fixed;
+bottom: 0px;
+/* left: 0px; */
+right: 45px;
+width: auto;
+height: auto;
+/* background-color: var(--wp--preset--color--white); */
+text-align: right;
+padding: 10px ;
+z-index: 9999;
+}
+@media (max-width: 996px) {
+.fixed-bottom-menu{
+display: block;
+position: fixed;
+bottom: 0px;
+
+right: 45px;
+width: 100%;
+height: auto;
+background-color: var(--wp--preset--color--white);
+text-align: center;
+padding: 10px;
+z-index: 9999;
+}
+}

@@ -2,6 +2,7 @@ import React,{useEffect , useState} from 'react'
 import { Link } from "react-scroll";
 import { animateScroll as scroll } from 'react-scroll';
 import * as Unicons from '@iconscout/react-unicons'
+import wp from "../assets/images/ref/WhatsApp.svg.png"
 
 export default function Switcher() {
     const [scrollToTops, setScrollToTops] = useState(false); 
@@ -53,14 +54,11 @@ export default function Switcher() {
                     </label>
                 </span>
             </div>
-
-            <div className="fixed top-[40%] -right-3 z-50">
-                <Link to="#" id="switchRtl" className="cursor-pointer">
-                    <span className="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-semibold rtl:block ltr:hidden" onClick={(event) => changeMode('layout', event)}>LTR</span>
-                    <span className="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-semibold ltr:block rtl:hidden" onClick={(event) => changeMode('layout', event)}>RTL</span>
-                </Link>
-            </div> */}
-
+*/}
+          {/*   <div className="fixed top-[40%] -right-3 z-50">
+            <Link to="https://api.whatsapp.com/send?phone=905364916063" style={{textAlign:"center",display:"flex",justifyContent:"center"}} className=" border-amber-500 hover:border-amber-600 text-white rounded-md"><img style={{width:"65px",height:"65px"}} src={wp}/></Link>
+            </div> 
+ */}
             <Link  href="#" onClick={scrollToTop}
                 id="back-to-top" className={`${!scrollToTops ? "hidden":"back-to-top fixed  text-lg rounded-full z-10 bottom-5 right-5 h-9 w-9 text-center bg-amber-500 text-white leading-9 flex items-center justify-center"}`}><Unicons.UilArrowUp width={18}/></Link>
          
