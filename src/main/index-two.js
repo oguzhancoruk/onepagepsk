@@ -19,7 +19,7 @@ export default function IndexTwo(){
     return(
         <>
             <Navbar/>
-            <HeroTwo/>
+          {/*   <HeroTwo/> */}
             <AboutUs/>
            {/* ß */}
             <CTABanner/>
