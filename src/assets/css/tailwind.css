@@ -1904,6 +1904,7 @@ p{
 /*===============================*/
 .customer-testi{
   cursor: e-resize;
+  
 }
 .customer-testi .content::before{
   position: absolute;
