@@ -167,7 +167,7 @@ export const blogData = [
     },
     {
         image:"/images/blog/01_upwind.jpg",
-        title:'Upwind: Tailwind CSS Landing Page Template',
+        title:'yeni konu',
         desc:'The phrasal sequence of the is now so that many campaign and benefit'
     },
 ]
