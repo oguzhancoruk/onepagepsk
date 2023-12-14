@@ -54,7 +54,7 @@ export default function GetInTouch(){
                             </div>
                         </div>
 
-                        <div className="flex mt-4">
+                      {/*   <div className="flex mt-4">
                             <div className="icons text-center mx-auto">
                                 <Unicons.UilEnvelope className=" block rounded text-2xl dark:text-white mb-0"/>
                             </div>
@@ -63,6 +63,19 @@ export default function GetInTouch(){
                                 <h5 className="text-[17px] dark:text-white mb-2 font-medium">Email</h5>
                                 <Link to="mailto:contact@example.com" className="text-slate-400 text-[15px]">contact@example.com</Link>
                             </div>
+                        </div> */}
+
+                        <div className="flex mt-4">
+                            <div className="icons text-center mx-auto">
+                                <Unicons.UilMapMarker className=" block rounded text-2xl dark:text-white mb-0"/>
+                            </div>
+
+                            <div className="flex-1 ms-6">
+                                <h5 className="text-[17px] dark:text-white mb-2 font-medium">Konum Kocaeli</h5>
+                                <p className="text-slate-400 text-[15px] mb-2">Hacıhalil, Eski, TÜFEKÇİOĞLU PLAZA, Adliye Cd. No:35, 41400 Gebze/Kocaeli</p>
+                               
+                            </div>
+                           
                         </div>
 
                         <div className="flex mt-4">
@@ -71,9 +84,11 @@ export default function GetInTouch(){
                             </div>
 
                             <div className="flex-1 ms-6">
-                                <h5 className="text-[17px] dark:text-white mb-2 font-medium">Konum</h5>
-                                <p className="text-slate-400 text-[15px] mb-2">Hacıhalil, Eski, TÜFEKÇİOĞLU PLAZA, Adliye Cd. No:35, 41400 Gebze/Kocaeli</p>
+                                <h5 className="text-[17px] dark:text-white mb-2 font-medium">Konum İstanbul</h5>
+                                <p className="text-slate-400 text-[15px] mb-2">Bostancı, Altıntepe, İstasyon Yolu Sokağı No:7 D:A, 34840 Maltepe/İstanbul</p>
+                               
                             </div>
+                           
                         </div>
                     </div>
                 </div>
