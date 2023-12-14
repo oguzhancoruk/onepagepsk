@@ -21,10 +21,10 @@ export default function Blogs(){
 
                         <div className="content p-6">
                             <Link to="" className="text-[17px] hover:text-amber-500 dark:text-white dark:hover:text-amber-500 transition duration-500 ease-in-out font-medium h5">{item.title}</Link>
-                            <p className="text-slate-400 mt-3 text-[15px]">{item.desc}</p>
+                            <p className="text-slate-400 mt-3 text-[15px]">{item.desc.substring(0,100)}</p>
                             
                             <div className="mt-5">
-                                <Link to="" className="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500 inline-flex items-center gap-1">Read More <Unicons.UilArrowRight width={16}/> </Link>
+                                <Link  to={`/blogs/${item.title}`}className="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500 inline-flex items-center gap-1">Daha Fazlası <Unicons.UilArrowRight width={16}/> </Link>
                             </div>
                         </div>
                     </div>

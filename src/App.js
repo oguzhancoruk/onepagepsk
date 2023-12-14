@@ -8,6 +8,8 @@ import IndexTwo from './main/index-two';
 import IndexThree from './main/index-three';
 import IndexDark from './main/index-dark';
 import IndexRtl from './main/index-rtl';
+import BlogInside from './components/blogInside';
+import TestInside from './components/testInside';
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
      {/*  <Route path="/index-three" element={<IndexThree/>} />
       <Route path="/index-dark" element={<IndexDark/>} />
       <Route path="/index-rtl" element={<IndexRtl/>} /> */}
+      <Route path='/blogs/:text' element={<BlogInside/>}/>
+      <Route path='/test/:text' element={<TestInside/>}/>
     </Routes>
   <Switcher/> 
   </BrowserRouter>

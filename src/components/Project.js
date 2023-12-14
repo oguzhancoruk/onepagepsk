@@ -47,7 +47,7 @@ export default function Projects(){
                         <p className="text-slate-400 mt-3 text-[15px]">{item.desc}</p>
                         
                         <div className="mt-5">
-                            <Link href="" className="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500 inline-flex items-center gap-1">Teste Başla <Unicons.UilArrowRight width={16}/></Link>
+                            <Link  to={`/test/${item.title}`} className="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500 inline-flex items-center gap-1">Teste Başla <Unicons.UilArrowRight width={16}/></Link>
                         </div>
                     </div>
                 </div> 

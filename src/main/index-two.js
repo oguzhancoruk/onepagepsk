@@ -10,6 +10,7 @@ import GetInTouch from "../components/GetInTouch";
 import Footer from "../components/Footer";
 import HeroTwo from "../components/HeroTwo";
 import Clients from "../components/Clients";
+import BlogInside from "../components/blogInside";
 
 export default function IndexTwo(){
     useEffect(() => {
@@ -29,6 +30,7 @@ export default function IndexTwo(){
             <Blogs/>
             <GetInTouch/>
             <Footer/>
+     
             
         </>
     )
