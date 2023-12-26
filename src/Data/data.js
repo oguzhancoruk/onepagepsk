@@ -224,10 +224,7 @@ export const test=[
         title:"Öfke Kontrolü Testi",
         question:"4.Başkalarının hataları, yaptığım işi yavaşlatınca kızarım."
     },
-    {
-        title:"Öfke Kontrolü Testi",
-        question:"1. Çabuk Parlarım"
-    },
+  
     {
         title:"Öfke Kontrolü Testi",
         question:"5.Yaptığım iyi bir işten sonra takdir edilmemek canımı sıkar."
