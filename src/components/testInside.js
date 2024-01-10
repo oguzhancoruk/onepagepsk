@@ -11,8 +11,8 @@ function TestInside(){
     const [selectedOptions, setSelectedOptions] = useState([]);
     const [toplamPuan, setToplamPuan] = useState();
    
-    const handleOptionChange = (index, value) => {
-        console.log(index)
+    const handleOptionChange = (index, value,i) => {
+        
         // Create a copy of the current selectedOptions array
         const updatedOptions = [...selectedOptions];
       
@@ -22,10 +22,10 @@ function TestInside(){
         // If the option exists, update its value; otherwise, add a new option
         if (existingOptionIndex !== -1) {
           // Update existing option's value
-          updatedOptions[existingOptionIndex] = { index, value };
+          updatedOptions[existingOptionIndex] = { index, value,i };
         } else {
           // Add new option to the array
-          updatedOptions.push({ index, value });
+          updatedOptions.push({ index, value,i });
         }
       
         // Update state with the new array
@@ -33,6 +33,38 @@ function TestInside(){
       };
 
 
+      const sendResult1 =()=>{
+        let yeniGrupPuanlari = {
+          grup1: 0
+       
+        };
+        selectedOptions.forEach((eleman) => {
+          // Her bir elemanın value değerine göre puanlama yap
+     
+      
+           
+            
+                if (eleman.i ==0  ) {
+                  yeniGrupPuanlari.grup1 += 0;
+                } else if (eleman.i ==1) {
+                  yeniGrupPuanlari.grup1 += 1;
+                } else if (eleman.i ==2) {
+                  yeniGrupPuanlari.grup1 += 2;
+                } else if (eleman.i ==3) {
+                  yeniGrupPuanlari.grup1 += 3;
+                }
+        
+            
+           
+          
+        
+        })
+        setToplamPuan(yeniGrupPuanlari);
+     
+       
+      ;
+        handleResultsButtonClick()
+      }
       const sendResult =()=>{
         let yeniGrupPuanlari = {
           grup1: 0,
@@ -100,10 +132,16 @@ function TestInside(){
         handleResultsButtonClick()
       }
       localStorage.setItem("öfke",JSON.stringify(toplamPuan))
+      localStorage.setItem("depresyon",JSON.stringify(toplamPuan))
+
       const handleResultsButtonClick = () => {
         // results patikasına puanları gönder
+        localStorage.setItem("pathname",text)
         window.location.assign('/results');
       };
+     
+
+    
     return(
         <div className="">
            <Navbar/>
@@ -210,7 +248,8 @@ function TestInside(){
           
             <p className="title h5 text-[20px] font-medium hover:text-amber-500 ">{res.question}</p>
             <div className="content mt-1" style={{ display: "flex", flexDirection:"column", }}>
-           {res?.data?.map(rs=>{
+           {res?.data?.map((rs,i)=>{
+           
             return(<>
              <div class="inline-flex items-center">
    
@@ -218,7 +257,7 @@ function TestInside(){
      class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-10"
      id={`radio-${index}`}
      value={rs}
-     onChange={() => handleOptionChange(index,rs)}
+     onChange={() => handleOptionChange(index,rs,i)}
      />
       <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="black"> {rs}
       </label>
@@ -240,7 +279,7 @@ function TestInside(){
 })}
           </div> 
            </div>
-           <button /* disabled={selectedOptions?.length===35?false:true} */ style={{  margin: 10, display: "block", marginLeft: "auto", marginRight: "auto",marginBottom:80 }} className="btn bg-amber-500/10 hover:bg-amber-500 border-amber-500/10 hover:border-amber-500 text-amber-500 hover:text-white rounded-md  mt-2" onClick={sendResult} >
+           <button /* disabled={selectedOptions?.length===35?false:true} */ style={{  margin: 10, display: "block", marginLeft: "auto", marginRight: "auto",marginBottom:80 }} className="btn bg-amber-500/10 hover:bg-amber-500 border-amber-500/10 hover:border-amber-500 text-amber-500 hover:text-white rounded-md  mt-2" onClick={text==="Öfke Kontrolü Testi"? sendResult:sendResult1} >
   Testi Tamamla
 </button>
 

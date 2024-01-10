@@ -8,7 +8,8 @@ function TestInside() {
     const { text } = useParams();
 
     const data1 = localStorage.getItem("öfke");
-    console.log(JSON.parse(data1))
+    const data2 = localStorage.getItem("depresyon");
+   const pathname = localStorage.getItem("pathname")
 
 
 
@@ -18,7 +19,7 @@ function TestInside() {
         <div className="">
             <Navbar />
             <div style={{ marginTop: "80px" }} className=" container  mt-15">
-                <div className="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900" >
+               {pathname==="Öfke Kontrolü Testi"?<div className="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900" >
                     <p style={{ textAlign: "center", fontSize: 35 }}> Öfke Kontrol Testi Sonucu</p>
                     <p style={{ textAlign: "left", fontSize: 20 }}> Sürekli Öfke Puanı</p>
 
@@ -47,7 +48,21 @@ function TestInside() {
 
 
 
-                </div>
+                </div>:<div className="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900" >
+                    <p style={{ textAlign: "center", fontSize: 35 }}> Depresyon Testi Sonucu</p>
+                    <p style={{ textAlign: "left", fontSize: 20 }}> Test Puanı</p>
+
+                    <div clasName="w-full "  style={{backgroundColor:"rgb(128, 128, 128,0.2 )",borderRadius:50}}>
+                        <div className="bg-amber-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width:`${(100*(Number(JSON.parse(data1).grup1)))/63}%`}}> {JSON.parse(data1).grup1}</div>
+                    </div>
+                    <p style={{marginTop:10,fontSize:25}}>{Number(JSON.parse(data2).grup1)<=9?"Minimal Depresyon":Number(JSON.parse(data2).grup1)<=16 &Number(JSON.parse(data2).grup1)>=10?"Hafif Depresyon":Number(JSON.parse(data2).grup1)<=29 &Number(JSON.parse(data2).grup1)>=17?"Orta Depresyon":Number(JSON.parse(data2).grup1)<=63 &Number(JSON.parse(data2).grup1)>=30?"Şiddetli Depresyon":null}</p>
+                    
+
+                    
+
+
+
+                </div>} 
             </div>
             <a href="https://api.whatsapp.com/send?phone=905364916063" target="_blank"><button style={{ margin: 10, display: "block", marginLeft: "auto", marginRight: "auto" }} className="btn bg-amber-500/10 hover:bg-amber-500 border-amber-500/10 hover:border-amber-500 text-amber-500 hover:text-white rounded-md  mt-2">
                 Bize Ulaşın Sonuçlarınızı Değerlendirelim.
