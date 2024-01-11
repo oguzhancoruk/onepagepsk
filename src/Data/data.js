@@ -568,4 +568,39 @@ export const test1=[
         ]
     },
     ]
-
+export const me =[
+    {
+        Eğitimler: [
+        "Psikodinamik Terapi Eğitimi Otto Kernberg",
+          "Kişilik Bozuklukları Otto Kernberg",
+          "Bilişsel Davranışçı Terapi - Prof. Dr. Hakan Türkçapar",
+          "Bdt Travma-Prof. Dr. Hakan Türkçapar",
+          "Borderline K.b. Şema Terapi-Dr. Alp Karaosmanoğlu",
+          "Beck Yönelimli CBT nedir-Dr.Emel Stroup",
+          "Psikodinamik Terapi-Prof.Dr.Sibel Mercan",
+          "Psikoterapide Düşünceler -Prof. Dr. Hakan Türkçapar",
+          "Grup Terapisi -Dr.Pervin Sevda Bıkmaz",
+          "Bağımlılığa Yaklaşım -UzmPsk. Kinyas Tekin",
+          "Görüşme Teknikleri-Prof.Dr.Burcu Çakaloz",
+          "EMDR Travma Psikoterapisi- Uzm.Psk.Bahattin Göktan",
+          "Bilişsel Psikoloji-Dr.Ayhan Karay",
+          "Aktarım OdaklıTerapi -Psk. Olcay Yaman",
+          "Bilişsel Davranışçı Terapi-Dr.Sema Yeşilyurt",
+          "Psikodinamik Terapi -Dr.Cihat Çıtak",
+          "Süpervizyon-Doç.Dr.Burcu Rahşan",
+          "Çocuk Psikopatolojisi-Dr.Necmettin Aksoy",
+          "Süpervizyon-Dr.Fadime Yurtseven",
+          "Mindfulness Terapi- Psk.Nilüfer Şişman",
+          "Projektif Testler-Dr.Umut Yıldız"
+        ],
+        persons: [
+          "Prof.Dr.KEMAL ARIKAN",
+          "Prof.Dr.Salih ÖZDEN",
+          "Prof.Dr.ÖGET ÖKTEM TANÖR",
+          "DR.AYHAN KARAY",
+          "DR.ASİL BUDAKLI",
+          "DR.LEVENT BAKIŞGAN"
+        ]
+      }
+      
+]

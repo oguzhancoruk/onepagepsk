@@ -41,7 +41,7 @@ Kariyeri boyunca İstanbul Üniversitesi Çapa Tıp Fakültesi, İstanbul Büyü
 Şu an, Gebze'de ve Bostancı'da PSİKOLOJİ DANIŞMANLIK Merkezi'nde hizmet vermektedir</p>
                         
                             <div className="mt-6">
-                                <Link to="#project" className="btn bg-amber-500/10 hover:bg-amber-500 border-amber-500/10 hover:border-amber-500 text-amber-500 hover:text-white rounded-md me-2 mt-2">Beni Tanıyın</Link>
+                                <Link to="me" className="btn bg-amber-500/10 hover:bg-amber-500 border-amber-500/10 hover:border-amber-500 text-amber-500 hover:text-white rounded-md me-2 mt-2">Beni Tanıyın</Link>
                             </div>
                         </div>
                     </div>

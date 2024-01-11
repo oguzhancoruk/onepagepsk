@@ -10,7 +10,8 @@ import IndexDark from './main/index-dark';
 import IndexRtl from './main/index-rtl';
 import BlogInside from './components/blogInside';
 import TestInside from './components/testInside';
-import TestResults from "./components/testResults"
+import TestResults from "./components/testResults";
+import AboutMe from './components/AboutMe';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Route path='/blogs/:text' element={<BlogInside/>}/>
       <Route path='/test/:text' element={<TestInside/>}/>
       <Route path='results' element ={<TestResults/>}/>
+      <Route path='me' element ={<AboutMe/>}/>
     </Routes>
   <Switcher/> 
   </BrowserRouter>
